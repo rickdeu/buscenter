@@ -1,0 +1,56 @@
+#map {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.carousel-indicators img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.partner-logo, .donor-logo {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.gallery-item:before {
+    content: '';
+    display: block;
+    padding-top: 75%;
+}
+.gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.gallery-item:hover .caption {
+    opacity: 1;
+}
